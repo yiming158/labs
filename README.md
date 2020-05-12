@@ -16,7 +16,9 @@ min_1, min_5, min_15 = os.getloadavg()
 print("5 min loadavg: ",min_5)
 print("CPU count: ",os.cpu_count())
 if((os.cpu_count()-min_5)<1):
-    sys.exit()
+
+sys.exit()
+
 print("**************************************************************")
   
 def make_request(url):
